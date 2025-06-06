@@ -48,7 +48,11 @@ func main() {
 
 	// we unmarshal our byteArray which contains our
 	// jsonFile's content into 'users' which we defined above
-	json.Unmarshal(byteValue, &users)
+	err = json.Unmarshal(byteValue, &users)
+	if err != nil {
+		fmt.Println("Error parsing JSON:", err)
+		return
+	}
 
 	fmt.Println(users)
 	// we iterate through every user within our users array and
