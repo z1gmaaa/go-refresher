@@ -13,8 +13,8 @@ lint:
 
 
 run:build
-	/home/adithyaaaa/vsc/forked/go-refresher/anonymousfunctions/anonymfns.go
-	/home/adithyaaaa/vsc/forked/go-refresher/flags/simple_flags.go
-	/home/adithyaaaa/vsc/forked/go-refresher/jsonparsing/parse_file.go
-	/home/adithyaaaa/vsc/forked/go-refresher/structs/data_collection.go
+	$(out)/anonymfns
+	$(out)/simple_flags
+	$(out)/parse_file
+	$(out)/data_collection
 	
